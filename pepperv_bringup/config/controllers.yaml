@@ -1,0 +1,258 @@
+# ============================================================================================
+# File Name: <controllers.yaml>
+# Developer: TAKKIE HALIMI
+# Email: takkie8halimi@gmail.com
+#
+# Description: 
+#     <This file defines the joint position controllers for the virtual Pepper robot, 
+#      specifying the configuration and initial positions for each joint. It is typically 
+#      used in robotics simulation environments like ROS (Robot Operating System) or Gazebo
+#      to control the robot's movements and ensure accurate articulation of its joints.
+#       Please do not modify this file.>
+#
+# Version History:
+#     v1.0 - Initial version
+#
+# ============================================================================================
+pepper:
+ 
+  HeadYaw_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "HeadYaw"
+    position: 0.0
+    
+  HeadPitch_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "HeadPitch"
+    position: 0.0
+    
+  HipRoll_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "HipRoll"
+    position: 0.0
+    
+  HipPitch_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "HipPitch"
+    position: 0.0
+    
+  KneePitch_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "KneePitch"
+    position: 0.0
+    
+  LShoulderPitch_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LShoulderPitch"
+    position: 0.0
+    
+  LShoulderRoll_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LShoulderRoll"
+    position: 0.7853983250000001
+    
+  LElbowYaw_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LElbowYaw"
+    position: 0.0
+    
+  LElbowRoll_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LElbowRoll"
+    position: -0.7853983250000001
+    
+  LWristYaw_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LWristYaw"
+    position: 0.0
+    
+  LHand_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LHand"
+    position: 0.5
+    
+  RShoulderPitch_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RShoulderPitch"
+    position: 0.0
+    
+  RShoulderRoll_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RShoulderRoll"
+    position: -0.7853983250000001
+    
+  RElbowYaw_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RElbowYaw"
+    position: 0.0
+    
+  RElbowRoll_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RElbowRoll"
+    position: 0.7853983250000001
+    
+  RWristYaw_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RWristYaw"
+    position: 0.0
+    
+  RHand_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RHand"
+    position: 0.5
+    
+  RFinger41_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger41"
+    position: 0.4363325
+    
+  LFinger42_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger42"
+    position: 0.4363325
+    
+  RFinger12_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger12"
+    position: 0.4363325
+    
+  LFinger33_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger33"
+    position: 0.4363325
+    
+  RFinger31_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger31"
+    position: 0.4363325
+    
+  LFinger21_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger21"
+    position: 0.4363325
+    
+  RFinger32_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger32"
+    position: 0.4363325
+    
+  LFinger13_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger13"
+    position: 0.4363325
+    
+  LFinger32_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger32"
+    position: 0.4363325
+    
+  LFinger11_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger11"
+    position: 0.4363325
+    
+  RFinger22_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger22"
+    position: 0.4363325
+    
+  RFinger13_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger13"
+    position: 0.4363325
+     
+  LFinger22_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger22"
+    position: 0.4363325
+    
+  RFinger21_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger21"
+    position: 0.4363325
+    
+  LFinger41_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger41"
+    position: 0.4363325
+    
+  LFinger12_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger12"
+    position: 0.4363325
+    
+  RFinger23_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger23"
+    position: 0.4363325
+   
+  RFinger11_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger11"
+    position: 0.4363325
+    
+  LFinger23_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger23"
+    position: 0.4363325
+    
+  LFinger43_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger43"
+    position: 0.4363325
+   
+  RFinger43_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger43"
+    position: 0.4363325
+    
+  RFinger42_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger42"
+    position: 0.4363325
+   
+  LFinger31_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LFinger31"
+    position: 0.4363325
+    
+  RFinger33_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RFinger33"
+    position: 0.4363325
+    
+  LThumb1_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LThumb1"
+    position: 0.4363325
+    
+  RThumb2_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RThumb2"
+    position: 0.4363325
+    
+  RThumb1_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "RThumb1"
+    position: 0.4363325
+    
+  LThumb2_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "LThumb2"
+    position: 0.4363325
+    
+  WheelFL_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "WheelFL"
+    position: 0.0
+    
+  WheelB_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "WheelB"
+    position: 0.0
+    
+  WheelFR_position_controller:
+    type: "position_controllers/JointPositionController"
+    joint: "WheelFR"
+    position: 0.0
+

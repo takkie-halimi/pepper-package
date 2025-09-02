@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Set the robot version and name -->
+  <arg name="version" default="1.0" />
+  <arg name="robot_name" default="pepper" />
+
+  <!-- Set the robot name parameter -->
+  <param name="robot_name" value="$(arg robot_name)" />
+
+  <!-- Load the robot description -->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find pepper_description)/urdf/pepper$(arg version)_generated_urdf/pepper_robot.xacro'" />
+
+  <!-- Load the controllers from the YAML file -->
+  <rosparam file="$(find pepperv_bringup)/config/controllers.yaml" command="load" />
+
+  <!-- Start the robot state publisher -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+  <!-- Start the Pepper virtual hardware interface -->
+  <node name="pepper_hardware_interface" pkg="pepper_vhw_interface" type="virtual_hw_interface" respawn="false" output="screen" />
+
+  <!-- Static transform for RViz -->
+  <node pkg="tf" type="static_transform_publisher" name="static_transform_publisher" args="0 0 0 0 0 0 odom world 100" />
+
+  <!-- RViz visualization -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-f odom -d $(find pepper_description)/config/pepper.rviz" />
+
+  <!-- Start Rosbridge Server -->
+  <node pkg="rosbridge_server" type="rosbridge_websocket" name="rosbridge_websocket" output="screen">
+    <!-- Optional: Specify WebSocket port -->
+    <param name="port" value="9090" />
+  </node>
+
+  <!-- Start Rosapi -->
+  <node pkg="rosapi" type="rosapi_node" name="rosapi_node" output="screen" />
+
+</launch>
